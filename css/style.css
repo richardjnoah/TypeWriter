@@ -1,0 +1,28 @@
+body,html{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  font-family: 'VT323', monospace;
+}
+
+.typing h1{
+  overflow: hidden;
+  border-right: .2em solid;
+  white-space: nowrap;
+  animation: typeEffect 5s steps(50),
+  cursorBlink .8s step-end infinite;
+  padding-left: 10px;
+}
+
+@keyframes typeEffect {
+  from {width:0}
+  to {width:100%}
+}
+@keyframes cursorBlink {
+  from, to {border-color: transparent}
+  50% {border-color: green;}
+}
